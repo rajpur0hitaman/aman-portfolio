@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>AMAN — Video Editor & Motion Designer</title>
+<title>Aman Rajpurohit — Video Editor & Motion Designer</title>
 <meta name="description" content="AMAN — Video Editor and Motion Designer. Short form, documentary, motion graphics and commercial editing.">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -10,7 +10,7 @@
 </head>
 <body>
 <div id="cursor"></div><div id="progress"></div>
-<nav><a class="brand" href="#">AMAN<span>.</span></a><div class="navlinks"><a href="#work">Work</a><a href="#about">About</a><a href="#contact">Contact</a></div><a class="nav-cta" href="#contact">Let's work ↗</a></nav>
+<nav><a class="brand" href="#">AMAN RAJPUROHIT<span>.</span></a><div class="navlinks"><a href="#work">Work</a><a href="#about">About</a><a href="#contact">Contact</a></div><a class="nav-cta" href="#contact">Let's work ↗</a></nav>
 
 <main>
 <section class="hero" id="home">
@@ -31,7 +31,7 @@
 </section>
 
 <section id="work" class="section">
-  <div class="section-head"><div><p class="eyebrow">01 — SELECTED WORK</p><h2>Projects with<br><em>purpose.</em></h2></div><p class="muted">A curated selection of edits, motion pieces and visual stories.</p></div>
+  <div class="section-head"><div><p class="eyebrow">01 — SELECTED WORK</p><h2>Projects with<br><em>purpose.</em></h2></div><p class="muted">A curated selection of short-form edits, motion graphics and visual storytelling.</p></div>
   <div class="filters" role="tablist">
     <button class="active" data-filter="all">ALL</button><button data-filter="short">SHORT FORM</button><button data-filter="doc">DOCUMENTARY</button><button data-filter="motion">MOTION GRAPHICS</button><button data-filter="commercial">COMMERCIAL</button>
   </div>
@@ -48,5 +48,15 @@
 <section id="contact" class="contact"><p class="eyebrow">04 — LET'S WORK</p><h2>Have footage?<br><em>Let's make it move.</em></h2><a class="contact-link" href="mailto:rajpurohitaman08@gmail.com">rajpurohitaman08@gmail.com ↗</a><div class="socials"><a href="https://instagram.com/aman.krx" target="_blank" rel="noopener">Instagram · @aman.krx</a><a href="https://wa.me/918160067161" target="_blank" rel="noopener">WhatsApp · 8160067161</a></div></section>
 </main>
 <footer><span>© 2026 AMAN</span><span>BUILT FOR THE EDIT.</span></footer>
+<div class="video-modal" id="videoModal" aria-hidden="true">
+  <div class="video-backdrop" data-close-video></div>
+  <div class="video-modal-card" role="dialog" aria-modal="true" aria-label="Portfolio video">
+    <button class="video-close" type="button" data-close-video aria-label="Close video">×</button>
+    <div class="video-frame">
+      <iframe id="portfolioPlayer" title="Aman Rajpurohit Portfolio" src="about:blank" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+    </div>
+  </div>
+</div>
+
 <script src="script.js"></script>
 </body></html>

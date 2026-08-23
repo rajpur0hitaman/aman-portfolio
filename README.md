@@ -19,3 +19,11 @@ Open `index.html` to replace:
 ## GitHub Pages
 Upload the files to a public GitHub repository, then:
 Settings → Pages → Deploy from a branch → main → /(root) → Save.
+
+
+## Current portfolio
+The Selected Work cards link to Aman Rajpurohit's Google Drive portfolio showreel. Replace the links in `script.js` when individual project links are ready.
+
+
+## Portfolio video
+The Portfolio card opens the Cloudinary-hosted showreel in an on-site video modal. The video URL is configured in `script.js`.
