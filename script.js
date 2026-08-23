@@ -20,5 +20,7 @@ document.querySelectorAll(".filters button").forEach(b=>b.addEventListener("clic
 document.querySelectorAll("[data-close-video]").forEach(el=>el.addEventListener("click",closeVideo));
 document.addEventListener("keydown",e=>{if(e.key==="Escape"&&modal.classList.contains("open"))closeVideo()});
 const scene=document.querySelector("#scene");
+if (window.matchMedia("(pointer:fine)").matches) {
 document.addEventListener("mousemove",e=>{const x=e.clientX/innerWidth-.5,y=e.clientY/innerHeight-.5;scene.style.transform=`rotateY(${x*8}deg) rotateX(${-y*5}deg)`;document.querySelector("#cursor").style.left=e.clientX+"px";document.querySelector("#cursor").style.top=e.clientY+"px"});
+}
 addEventListener("scroll",()=>{document.querySelector("#progress").style.width=(scrollY/(document.body.scrollHeight-innerHeight)*100)+"%"});
