@@ -1,62 +1,145 @@
 <!doctype html>
 <html lang="en">
 <head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Aman Rajpurohit — Video Editor & Motion Designer</title>
-<meta name="description" content="AMAN — Video Editor and Motion Designer. Short form, documentary, motion graphics and commercial editing.">
-<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#050505">
+<title>Aman Rajpurohit — Creative Editor</title>
+<meta name="description" content="Aman Rajpurohit — video editing, documentary editing and motion graphics.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<div id="cursor"></div><div id="progress"></div>
-<nav><a class="brand" href="#">AMAN RAJPUROHIT<span>.</span></a><div class="navlinks"><a href="#work">Work</a><a href="#about">About</a><a href="#contact">Contact</a></div><a class="nav-cta" href="#contact">Let's work ↗</a></nav>
+<div id="loader"><div class="loader-mark">AMAN<span>.</span></div><div class="loader-line"><i></i></div></div>
 
-<main>
-<section class="hero" id="home">
-  <div class="hero-glow"></div><div class="grid3d"></div>
-  <div class="hero-copy">
-    <p class="eyebrow">VIDEO EDITOR · MOTION DESIGNER</p>
-    <h1>MAKE<br><em>IT MOVE.</em></h1>
-    <p class="intro">I turn raw footage into sharp, engaging content through editing, motion graphics and visual storytelling.</p>
-    <a class="pill" href="#work">Explore selected work <span>↓</span></a>
+<header class="header">
+  <a href="#top" class="brand">AMAN<span>.</span></a>
+  <div class="header-center"><span id="modeText">3D / MOTION / EDIT</span></div>
+  <button class="menu-btn" id="menuBtn">MENU <span>+</span></button>
+</header>
+
+<div class="menu" id="menu">
+  <button class="menu-close" id="menuClose">CLOSE ×</button>
+  <nav>
+    <a href="#work">WORK <small>01</small></a>
+    <a href="#about">ABOUT <small>02</small></a>
+    <a href="#capabilities">CAPABILITIES <small>03</small></a>
+    <a href="#contact">CONTACT <small>04</small></a>
+  </nav>
+  <div class="menu-foot">RAJPUROHITAMAN08@GMAIL.COM</div>
+</div>
+
+<canvas id="webgl"></canvas>
+
+<main id="top">
+<section class="hero">
+  <div class="hero-ui">
+    <div class="micro">SCROLL TO EXPLORE</div>
+    <div class="hero-index">01 / 04</div>
   </div>
-  <div class="scene" id="scene">
-    <div class="ring r1"></div><div class="ring r2"></div>
-    <div class="screen" data-depth="20"><div class="screen-top"><span>PROJECT / 01</span><span>00:17:42</span></div><div class="screen-image"><div class="scan"></div><b>FRAME<br>BY<br>FRAME</b></div><div class="timeline"><i></i><i></i><i></i><i></i><i></i></div></div>
-    <div class="mini-card c1" data-depth="40">CUT<br><small>PRECISION</small></div>
-    <div class="mini-card c2" data-depth="30">MOTION<br><small>ENERGY</small></div>
+  <div class="hero-title">
+    <div class="eyebrow">VIDEO EDITOR · MOTION DESIGNER</div>
+    <h1>MAKE<br><span>IT</span><br><em>MOVE.</em></h1>
+    <p>I turn raw footage into sharp, engaging stories through editing, motion and visual rhythm.</p>
+    <a class="explore" href="#work">EXPLORE WORK <b>↓</b></a>
   </div>
-  <div class="scroll">SCROLL TO EXPLORE <span>↓</span></div>
+  <div class="scroll-word">SCROLL</div>
 </section>
 
-<section id="work" class="section">
-  <div class="section-head"><div><p class="eyebrow">01 — SELECTED WORK</p><h2>Projects with<br><em>purpose.</em></h2></div><p class="muted">A curated selection of short-form edits, motion graphics and visual storytelling.</p></div>
-  <div class="filters" role="tablist">
-    <button class="active" data-filter="all">ALL</button><button data-filter="short">SHORT FORM</button><button data-filter="doc">DOCUMENTARY</button><button data-filter="motion">MOTION GRAPHICS</button><button data-filter="commercial">COMMERCIAL</button>
+<section class="statement section">
+  <div class="section-no">02 / 04</div>
+  <div class="statement-copy">
+    <div class="eyebrow">BOLD IDEAS. CLEAN EXECUTION.</div>
+    <h2>Visuals that<br><em>hold attention.</em></h2>
+    <p>Short-form content, documentary edits and motion graphics built around one thing: making people keep watching.</p>
   </div>
-  <div class="work-grid" id="workGrid"></div>
 </section>
 
-<section id="about" class="section about">
- <div><p class="eyebrow">02 — ABOUT</p><h2>Editing with<br><em>intent.</em></h2></div>
- <div class="about-copy"><p>I’m Aman, a video editor focused on making content feel fast, clean and intentional. My work combines strong pacing, motion graphics and visual storytelling to keep attention from the first frame.</p><div class="stats"><div><b>02+</b><span>YEARS EDITING</span></div><div><b>04</b><span>CORE CATEGORIES</span></div><div><b>∞</b><span>IDEAS TO CUT</span></div></div></div>
-</section>
-
-<section class="capabilities"><p class="eyebrow">03 — CAPABILITIES</p><div class="cap-grid"><div><span>01</span><h3>Short Form</h3><p>Retention-focused reels, shorts and social content.</p></div><div><span>02</span><h3>Documentary</h3><p>Story-led edits with rhythm, structure and atmosphere.</p></div><div><span>03</span><h3>Motion</h3><p>Clean motion graphics, transitions and visual systems.</p></div><div><span>04</span><h3>Commercial</h3><p>Polished edits built around a strong visual identity.</p></div></div></section>
-
-<section id="contact" class="contact"><p class="eyebrow">04 — LET'S WORK</p><h2>Have footage?<br><em>Let's make it move.</em></h2><a class="contact-link" href="mailto:rajpurohitaman08@gmail.com">rajpurohitaman08@gmail.com ↗</a><div class="socials"><a href="https://instagram.com/aman.krx" target="_blank" rel="noopener">Instagram · @aman.krx</a><a href="https://wa.me/918160067161" target="_blank" rel="noopener">WhatsApp · 8160067161</a></div></section>
-</main>
-<footer><span>© 2026 AMAN</span><span>BUILT FOR THE EDIT.</span></footer>
-<div class="video-modal" id="videoModal" aria-hidden="true">
-  <div class="video-backdrop" data-close-video></div>
-  <div class="video-modal-card" role="dialog" aria-modal="true" aria-label="Portfolio video">
-    <button class="video-close" type="button" data-close-video aria-label="Close video">×</button>
-    <div class="video-frame">
-      <iframe id="portfolioPlayer" title="Aman Rajpurohit Portfolio" src="about:blank" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+<section class="work section" id="work">
+  <div class="section-head">
+    <div class="section-no">03 / 04</div>
+    <div>
+      <div class="eyebrow">SELECTED WORK</div>
+      <h2>Work that<br><em>moves.</em></h2>
     </div>
+    <p>Click a project to enter the work.</p>
+  </div>
+
+  <article class="project featured" data-video>
+    <div class="project-art">
+      <img src="portfolio-cover.png" alt="Aman Rajpurohit portfolio showreel">
+      <div class="project-shade"></div>
+      <div class="project-orb"></div>
+      <button class="play">PLAY REEL <span>↗</span></button>
+      <div class="project-number">01</div>
+    </div>
+    <div class="project-meta">
+      <div><span>PORTFOLIO SHOWREEL</span><strong>Short Form · Documentary · Motion Graphics</strong></div>
+      <b>2026 ↗</b>
+    </div>
+  </article>
+
+  <div class="work-grid">
+    <article class="project small" data-video>
+      <div class="project-art"><img src="portfolio-cover.png" alt=""><div class="project-shade"></div><span class="project-type">SHORT FORM</span><button class="round-play">↗</button></div>
+      <div class="project-meta"><div><span>02 / SHORT FORM</span><strong>Hooks · Pacing · Retention</strong></div><b>↗</b></div>
+    </article>
+    <article class="project small" data-video>
+      <div class="project-art"><img src="portfolio-cover.png" alt=""><div class="project-shade"></div><span class="project-type">DOCUMENTARY</span><button class="round-play">↗</button></div>
+      <div class="project-meta"><div><span>03 / DOCUMENTARY</span><strong>Story · Rhythm · Atmosphere</strong></div><b>↗</b></div>
+    </article>
+  </div>
+</section>
+
+<section class="approach section" id="about">
+  <div class="section-no">04 / 04</div>
+  <div class="approach-copy">
+    <div class="eyebrow">ABOUT / APPROACH</div>
+    <h2>Editing is<br><em>storytelling.</em></h2>
+    <p>I'm Aman, a video editor focused on making content feel intentional. I combine pacing, sound, motion graphics and visual hierarchy to make every frame earn its place.</p>
+  </div>
+  <div class="approach-lines">
+    <div><span>01</span><strong>HOOK</strong><small>Make the first seconds matter.</small></div>
+    <div><span>02</span><strong>RHYTHM</strong><small>Cut with purpose, not noise.</small></div>
+    <div><span>03</span><strong>MOTION</strong><small>Use movement to guide attention.</small></div>
+    <div><span>04</span><strong>IMPACT</strong><small>Leave a visual memory.</small></div>
+  </div>
+</section>
+
+<section class="capabilities section" id="capabilities">
+  <div class="eyebrow">CAPABILITIES</div>
+  <div class="cap-grid">
+    <div><span>01</span><h3>Short Form</h3><p>Fast, social-first edits designed around retention.</p></div>
+    <div><span>02</span><h3>Documentary</h3><p>Story-led editing with structure, pacing and atmosphere.</p></div>
+    <div><span>03</span><h3>Motion Graphics</h3><p>Typography, transitions and visual systems that support the story.</p></div>
+    <div><span>04</span><h3>Commercial</h3><p>Polished edits with a clear visual identity.</p></div>
+  </div>
+</section>
+
+<section class="contact section" id="contact">
+  <div class="eyebrow">LET'S MAKE SOMETHING</div>
+  <h2>Have footage?<br><em>Let's make it move.</em></h2>
+  <div class="contact-row">
+    <a href="mailto:rajpurohitaman08@gmail.com">EMAIL ↗</a>
+    <a href="https://instagram.com/aman.krx" target="_blank" rel="noopener">INSTAGRAM ↗</a>
+    <a href="https://wa.me/918160067161" target="_blank" rel="noopener">WHATSAPP ↗</a>
+  </div>
+</section>
+</main>
+
+<footer><span>AMAN RAJPUROHIT © 2026</span><span>KEEP SCROLLING ↑</span></footer>
+
+<div class="video-modal" id="videoModal">
+  <button id="closeVideo">CLOSE ×</button>
+  <div class="video-box">
+    <div class="video-label">AMAN RAJPUROHIT / SHOWREEL</div>
+    <iframe id="player" title="Aman Rajpurohit showreel" allow="autoplay; fullscreen; encrypted-media; picture-in-picture" allowfullscreen></iframe>
   </div>
 </div>
 
+<script src="https://cdn.jsdelivr.net/npm/three@0.161.0/build/three.min.js"></script>
 <script src="script.js"></script>
-</body></html>
+</body>
+</html>

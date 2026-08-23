@@ -1,29 +1,14 @@
-# AMAN Portfolio
+# Aman Rajpurohit — Immersive 3D Portfolio
 
-A premium 3D-style video editing portfolio built with plain HTML/CSS/JavaScript.
+Original portfolio design inspired by the interaction language of high-end 3D studios such as Lusion: cinematic dark canvas, scroll-led storytelling, large typography, interactive particles, immersive project cards and a strong contact ending.
 
-## Quick edits
-Open `script.js` and edit the `projects` array:
-- `name` = project title
-- `cat` = short / doc / motion / commercial
-- `label` = category label
-- `link` = your video/project URL
-- `bg` = visual background
+It does not copy Lusion's branding, text, artwork or code.
 
-Open `index.html` to replace:
-- YOUR_EMAIL@example.com
-- YOUR_INSTAGRAM_LINK
-- YOUR_YOUTUBE_LINK
-- YOUR_WHATSAPP_LINK
+## Update later
+- Change project cards in `index.html`
+- Change the Cloudinary showreel URL in `script.js`
+- Replace `portfolio-cover.png` with a new thumbnail using the same filename
+- Contact links are in `index.html`
 
-## GitHub Pages
-Upload the files to a public GitHub repository, then:
-Settings → Pages → Deploy from a branch → main → /(root) → Save.
-
-
-## Current portfolio
-The Selected Work cards link to Aman Rajpurohit's Google Drive portfolio showreel. Replace the links in `script.js` when individual project links are ready.
-
-
-## Portfolio video
-The Portfolio card opens the Cloudinary-hosted showreel in an on-site video modal. The video URL is configured in `script.js`.
+## Hosting
+Works as a static GitHub Pages site. Three.js is loaded from jsDelivr, so no build step is required.
