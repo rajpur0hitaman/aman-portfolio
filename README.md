@@ -11,4 +11,4 @@ It does not copy Lusion's branding, text, artwork or code.
 - Contact links are in `index.html`
 
 ## Hosting
-Works as a static GitHub Pages site. Three.js is loaded from jsDelivr, so no build step is required.
+Works as a static GitHub Pages site. The 3D particle field is built with vanilla Canvas JavaScript, so there is no external 3D library dependency.
