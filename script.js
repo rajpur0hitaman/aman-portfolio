@@ -13,7 +13,7 @@ function closeVideo(){player.src="about:blank"; modal.classList.remove("open"); 
 function render(filter="all"){
  const list=filter==="all"?[projects[0]]:projects.filter(p=>p.cat===filter);
  grid.innerHTML=list.map((p,i)=>`<button class="project" type="button" data-video="${p.video?"1":"0"}"><div class="project-visual" style="background-image:url('${p.image}');background-size:cover;background-position:center"><span class="project-play">▶</span></div><div class="project-info"><div><h3>${p.name}</h3><small>${p.label}</small></div><span>↗</span></div></button>`).join("");
- grid.querySelectorAll(".project[data-video="1"]").forEach(el=>el.addEventListener("click",openVideo));
+ grid.querySelectorAll('.project[data-video="1"]').forEach(el=>el.addEventListener('click',openVideo));
 }
 render();
 document.querySelectorAll(".filters button").forEach(b=>b.addEventListener("click",()=>{document.querySelectorAll(".filters button").forEach(x=>x.classList.remove("active"));b.classList.add("active");render(b.dataset.filter)}));
